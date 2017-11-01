@@ -18,6 +18,8 @@
 - [ ] Chrome
 - [ ] Postman
 - [ ] Firefox
+- [ ] Bashrc stuff
+- [ ] Global git config/ignore
 
 Less important but may be useful:
 
