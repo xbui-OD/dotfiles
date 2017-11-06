@@ -33,5 +33,7 @@ brew install git
 
 brew install node
 
+brew install python
+
 # Remove outdated versions from the cellar
 brew cleanup
