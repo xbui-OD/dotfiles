@@ -9,11 +9,13 @@
 
 brew install caskroom/cask/brew-cask
 
-# brew tap caskroom/versions
+brew tap caskroom/versions
 
-# brew cask install spectacle
+brew cask install spectacle
 
-# brew cask install visual-studio-code
+brew cask install visual-studio-code
+
+brew cask install docker
 
 brew tap caskroom/fonts
 brew cask install font-source-code-pro-for-powerline
