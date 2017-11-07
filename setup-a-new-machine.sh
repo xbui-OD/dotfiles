@@ -22,7 +22,7 @@ npm install -g diff-so-fancy
 pip2 install --user powerline-status
 pip2 install --user powerline-gitstatus
 
-# Update colors for powerline-gitstatus
-# Update shell powerline config
 # git completion/status?
+
+./symlink-setup.sh
 
