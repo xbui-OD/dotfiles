@@ -9,7 +9,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 PATH=$PATH:/Users/dheindel/Library/Python/2.7/bin:/Applications/MacVim.app/Contents/bin
 
-source ~/.git-completion.bash
+source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash"
 
 ## Powerline Stuff
 powerline-daemon -q
@@ -18,7 +18,7 @@ POWERLINE_BASH_SELECT=1
 . /Users/dheindel/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
 
-## Aliases 
+## Aliases
 alias ll="ls -l"
 alias json_pretty="python -m json.tool"
 
