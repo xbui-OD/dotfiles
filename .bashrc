@@ -21,6 +21,7 @@ POWERLINE_BASH_SELECT=1
 ## Aliases
 alias ll="ls -l"
 alias json_pretty="python -m json.tool"
+alias godev="cd ~/development"
 
 ###
 # time to upgrade `ls`
