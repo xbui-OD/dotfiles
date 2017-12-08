@@ -18,10 +18,26 @@ POWERLINE_BASH_SELECT=1
 . /Users/dheindel/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
 
+function docker_compose_helper() {
+  service=$1
+  shift
+  action=$@
+
+  dcyml="${HOME}/development/${service}/docker-compose.yml"
+
+  if [ ! -f "$dcyml" ]; then
+    echo "Can't find docker-compose.yml file for ${service} -- $dcyml"
+    return
+  fi
+
+  docker-compose -f $dcyml $action
+}
+
 ## Aliases
 alias ll="ls -l"
 alias json_pretty="python -m json.tool"
 alias godev="cd ~/development"
+alias dc="docker_compose_helper"
 
 ###
 # time to upgrade `ls`
