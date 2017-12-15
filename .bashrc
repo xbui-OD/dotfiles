@@ -33,6 +33,10 @@ function docker_compose_helper() {
   docker-compose -f $dcyml $action
 }
 
+# z beats cd most of the time. `brew install z`
+zpath="$(brew --prefix)/etc/profile.d/z.sh"
+[ -s $zpath ] && source $zpath
+
 ## Aliases
 alias ll="ls -l"
 alias json_pretty="python -m json.tool"

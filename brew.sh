@@ -17,6 +17,8 @@ brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --with-default-names
 
+# Help nav the file system
+brew install z
 
 # Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
@@ -34,6 +36,7 @@ brew install git
 brew install node
 
 brew install python
+
 
 # Remove outdated versions from the cellar
 brew cleanup
