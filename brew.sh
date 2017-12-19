@@ -20,6 +20,9 @@ brew install gnu-sed --with-default-names
 # Help nav the file system
 brew install z
 
+# Format JSON from the command line
+brew install jq
+
 # Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 brew install bash
