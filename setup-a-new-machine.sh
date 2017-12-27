@@ -26,3 +26,7 @@ pip2 install --user powerline-gitstatus
 
 ./symlink-setup.sh
 
+# Key repeating in VS Code
+
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
