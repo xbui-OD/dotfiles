@@ -33,6 +33,21 @@ function docker_compose_helper() {
   docker-compose -f $dcyml $action
 }
 
+function parse_jwt() {
+  local token=$1
+  local payload=`echo $token | cut -d '.' -f 2`
+  local len="${#payload}"
+  local mod=$((len % 4))
+
+  if [[ $mod -gt 0 ]]; then
+    local pad=$((4 - mod))
+    local padding=`echo '======' | cut -c 1,$pad`
+    local payload="${payload}${padding}"
+  fi 
+  echo "$payload"
+  echo $payload | base64 --decode | jq '.'
+}
+
 # z beats cd most of the time. `brew install z`
 zpath="$(brew --prefix)/etc/profile.d/z.sh"
 [ -s $zpath ] && source $zpath
@@ -42,6 +57,7 @@ alias ll="ls -l"
 alias json_pretty="python -m json.tool"
 alias godev="cd ~/development"
 alias dc="docker_compose_helper"
+alias jwt="parse_jwt"
 
 ###
 # time to upgrade `ls`

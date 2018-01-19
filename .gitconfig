@@ -3,6 +3,8 @@
 	email = dheindel@overdrive.com
 [push]
 	default = current
+[pull]
+	default = current
 [color]
 	ui = true
 [color "diff-highlight"]
