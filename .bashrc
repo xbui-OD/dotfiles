@@ -58,6 +58,7 @@ alias json_pretty="python -m json.tool"
 alias godev="cd ~/development"
 alias dc="docker_compose_helper"
 alias jwt="parse_jwt"
+alias prov="~/development/bin/odreadprov.sh"
 
 ###
 # time to upgrade `ls`
